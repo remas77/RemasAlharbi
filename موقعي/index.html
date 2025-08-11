@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--عشان تخلي التصميم للجوال والكمبيوتر-->    
+  <title>صفحتي الشخصية</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #db87d3, #c2c17b);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+       gap: 20px;
+    }
+    /* نص اللمعان */
+    .shine-text {
+      font-size: 28px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #fff, #ef1452, #bc36bc);
+      background-size: 200% auto;
+     -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+   
+      animation: shine 2s linear infinite;
+    }
+    @keyframes shine {
+      to {
+        background-position: 55% center;
+      }
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      max-width: 350px;
+      width: 100%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #f3f385;
+    }
+    h1 {
+      
+      margin: 10px 0 5px;
+       color:rgb(214, 6, 113)
+       
+    }
+    p {
+      margin: 4px 0;
+      color:rgb(236, 236, 111);
+    }
+    .links a {
+      display: block;
+      background: #edb7d9;
+      color: #eaea82;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .links a:hover {
+      background: #cd059b97;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align:center; margin-bottom: 10px;">
+    <h2 class="shine-text">اهلين محبين رموسه    ✨</h2>
+  </div>
+  <div class="card">
+    <img src="r.jpg.jpg" alt="صورة شخصية">
+    <h1> ريماس الحربي</h1>
+    <p>العمر: 23 سنة</p>
+    <p>التخصص: علوم الحاسب</p>
+    <div class="links">
+      <a href="mailto:rmremas777@gmail.com">📧 الإيميل</a>
+      <a href="tel:+966532442030">📱 الجوال</a>
+      <a href="https://wa.me/966532442030" target="_blank">💬 واتساب</a>
+    </div>
+  </div>
+
+</body>
+</html>
